@@ -1,1 +1,1 @@
-# sen_python_training
+# readme for python training
