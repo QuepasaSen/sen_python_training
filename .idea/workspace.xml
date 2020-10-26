@@ -20,12 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367fceb5-cc5c-4100-8f8e-56b4ff9dd6c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_group_add_ff.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_group_add_ff.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603745002804</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="добавили тест с пустыми полями в группе">
+      <created>1603745686824</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603745686824</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,29 +186,30 @@
     <MESSAGE value="изменения после того как начал заново" />
     <MESSAGE value="успешно пройденный тест через pytest" />
     <MESSAGE value="после создания методов" />
-    <option name="LAST_COMMIT_MESSAGE" value="после создания методов" />
+    <MESSAGE value="добавили тест с пустыми полями в группе" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавили тест с пустыми полями в группе" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="96" key="CommitChangelistDialog2" timestamp="1603745002030">
+    <state x="558" y="96" key="CommitChangelistDialog2" timestamp="1603745686004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="96" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603745002030" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1603745644888">
+    <state x="558" y="96" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603745686004" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1603746199767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603745644888" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1603745644888">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603746199767" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1603746199767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603745644888" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1603745644888">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603746199767" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1603746199767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603745644888" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1603745644888">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603746199767" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1603746199767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603745644888" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603746199767" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1603741495625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
