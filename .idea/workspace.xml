@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367fceb5-cc5c-4100-8f8e-56b4ff9dd6c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sen_python_training.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_group_add_ff.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_group_add_ff.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +46,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -104,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603723141415</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="комит после рефакторинга как попросили в видео уже с кодом из фаерфокса">
+      <created>1603726457317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603726457317</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,20 +135,48 @@
     <MESSAGE value="Улучшено описание репозитория" />
     <MESSAGE value="Создан проект в PyCharm" />
     <MESSAGE value="комит после рефакторинга как попросили в видео" />
-    <option name="LAST_COMMIT_MESSAGE" value="комит после рефакторинга как попросили в видео" />
+    <MESSAGE value="комит после рефакторинга как попросили в видео уже с кодом из фаерфокса" />
+    <option name="LAST_COMMIT_MESSAGE" value="комит после рефакторинга как попросили в видео уже с кодом из фаерфокса" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="96" key="CommitChangelistDialog2" timestamp="1603723140396">
+    <state x="558" y="96" key="CommitChangelistDialog2" timestamp="1603726456284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="96" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603723140396" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1603725679419">
+    <state x="558" y="96" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603726456284" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1603727117126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603725679419" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603707069435">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603727117126" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1603727117126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603707069435" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603727117126" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1603727117126">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603727117126" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1603727117126">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603727117126" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1603740103412">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603740103412" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603726558890">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603726558890" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_group_add_ff.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
