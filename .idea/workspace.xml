@@ -54,7 +54,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_group_add_ff.py">
+  <component name="RunManager" selected="Python tests.pytest in add_new_contact.py">
     <configuration name="test_add_group" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,8 +90,25 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in add_new_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="sen_python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/add_new_contact.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in add_new_contact.py" />
         <item itemvalue="Python tests.Unittests in test_group_add_ff.py" />
         <item itemvalue="Python.test_add_group" />
       </list>
@@ -176,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603801725538</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="добавил комментарии и разбил на группы по действиям">
+      <created>1603803321141</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603803321141</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,13 +227,14 @@
     <MESSAGE value="добавили тест с пустыми полями в группе" />
     <MESSAGE value="выделены вспомогательные методы и классы" />
     <MESSAGE value="импортировал тест убрал ненужное переименовал переменные на wd" />
-    <option name="LAST_COMMIT_MESSAGE" value="импортировал тест убрал ненужное переименовал переменные на wd" />
+    <MESSAGE value="добавил комментарии и разбил на группы по действиям" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил комментарии и разбил на группы по действиям" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="96" key="CommitChangelistDialog2" timestamp="1603801724553">
+    <state x="558" y="96" key="CommitChangelistDialog2" timestamp="1603803320293">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="96" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603801724553" />
+    <state x="558" y="96" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603803320293" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1603747740362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
