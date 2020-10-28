@@ -1,4 +1,4 @@
-class Dop:
+class info:
 
     def __init__(self, dop_address, dop_phone, notes):
         self.dop_address = dop_address

@@ -2,7 +2,7 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 import unittest
-from dop_info import Dop
+from all_info import info
 
 class AddNewContact(unittest.TestCase):
     def setUp(self):
@@ -24,15 +24,15 @@ class AddNewContact(unittest.TestCase):
         self.homepage_field(wd, "www.test.ru")
         self.birthday_fields(wd)
         self.anniversary_fields(wd)
-        self.additional_fields(wd, Dop(dop_address="USA", dop_phone="Colorado", notes="My notes about work"))
+        self.additional_fields(wd, info(dop_address="USA", dop_phone="Colorado", notes="My notes about work"))
         self.back_to_home_page(wd)
         self.logout(wd)
 
-    def additional_fields(self, wd, dop_info):
+    def additional_fields(self, wd, all_info):
         wd.find_element_by_name("address2").click()
-        wd.find_element_by_name("address2").send_keys(dop_info.dop_address)
-        wd.find_element_by_name("phone2").send_keys(dop_info.dop_phone)
-        wd.find_element_by_name("notes").send_keys(dop_info.notes)
+        wd.find_element_by_name("address2").send_keys(all_info.dop_address)
+        wd.find_element_by_name("phone2").send_keys(all_info.dop_phone)
+        wd.find_element_by_name("notes").send_keys(all_info.notes)
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
     def back_to_home_page(self, wd):
