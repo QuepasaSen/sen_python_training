@@ -1,4 +1,4 @@
-class info:
+class Info:
 
     def __init__(self, dop_address, dop_phone, notes, email, email2, email3, domashniy, mobilniy, rabochiy, fax, title, company, address, firstname, middlename, lastname, nickname):
         self.dop_address = dop_address

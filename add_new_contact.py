@@ -2,7 +2,7 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 import unittest
-from all_info import info
+from all_info import Info
 
 class AddNewContact(unittest.TestCase):
     def setUp(self):
@@ -14,17 +14,18 @@ class AddNewContact(unittest.TestCase):
     
     def test_add_new_contact(self):
         wd = self.wd
+        infoclass = Info("USA", "Colorado", "My notes about work", "My notes about work", "a@test.ru", "b@test.ru", "01-01-01", "02-02-02", "03-04-05", "06-07-08", "MyTitle", "MyCompany", "Russia", "Petrov", "Petr", "Petrovich", "Petya")
         self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
         self.add_new(wd)
-        self.fio_fields(wd, info(firstname="Petrov", middlename="Petr", lastname="Petrovich", nickname="Petya"))
-        self.about_company_fields(wd, info(title="MyTitle", company="MyCompany", address="Russia"))
-        self.telephones_fields(wd, info(domashniy="01-01-01", mobilniy="02-02-02", rabochiy="03-04-05", fax="06-07-08"))
-        self.emails_fields(wd, info(email="test@mail.ru", email2="a@test.ru", email3="b@test.ru"))
+        self.fio_fields(wd, infoclass)
+        self.about_company_fields(wd, infoclass)
+        self.telephones_fields(wd, infoclass)
+        self.emails_fields(wd, infoclass)
         self.homepage_field(wd, "www.test.ru")
         self.birthday_fields(wd)
         self.anniversary_fields(wd)
-        self.additional_fields(wd, info(dop_address="USA", dop_phone="Colorado", notes="My notes about work"))
+        self.additional_fields(wd, infoclass)
         self.back_to_home_page(wd)
         self.logout(wd)
 
