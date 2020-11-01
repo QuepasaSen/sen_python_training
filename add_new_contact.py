@@ -15,7 +15,6 @@ class AddNewContact(unittest.TestCase):
     def test_add_new_contact(self):
         wd = self.wd
         infoclass = Info("USA", "Colorado", "My notes about work", "My notes about work", "a@test.ru", "b@test.ru", "01-01-01", "02-02-02", "03-04-05", "06-07-08", "MyTitle", "MyCompany", "Russia", "Petrov", "Petr", "Petrovich", "Petya")
-        self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
         self.add_new(wd)
         self.fio_fields(wd, infoclass)
@@ -98,6 +97,7 @@ class AddNewContact(unittest.TestCase):
         wd.find_element_by_link_text("add new").click()
 
     def login(self, wd, username, password):
+        self.open_home_page(wd)
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").send_keys(username)
         wd.find_element_by_name("pass").click()
