@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from fixture.session import SessionHelper
+from fixture.contact import ContactHelper
 
 class Applic:
 
@@ -8,6 +9,7 @@ class Applic:
         self.wd = webdriver.Firefox()
         self.wd.implicitly_wait(30)
         self.session = SessionHelper(self)
+        self.contact = ContactHelper(self)
 
     def additional_fields(self, all_info):
         wd = self.wd
@@ -17,9 +19,9 @@ class Applic:
         wd.find_element_by_name("notes").send_keys(all_info.notes)
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
-    def back_to_home_page(self):
+    def open_home_page(self):
         wd = self.wd
-        wd.find_element_by_link_text("home page").click()
+        wd.get("http://localhost/addressbook/index.php")
 
     def anniversary_fields(self):
         wd = self.wd
@@ -79,14 +81,6 @@ class Applic:
         wd.find_element_by_name("middlename").send_keys(all_info.middlename)
         wd.find_element_by_name("lastname").send_keys(all_info.lastname)
         wd.find_element_by_name("nickname").send_keys(all_info.nickname)
-
-    def add_new(self):
-        wd = self.wd
-        wd.find_element_by_link_text("add new").click()
-
-    def open_home_page(self):
-        wd = self.wd
-        wd.get("http://localhost/addressbook/index.php")
 
     def destr(self):
         self.wd.quit()
