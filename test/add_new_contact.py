@@ -1,5 +1,5 @@
 from all_info import Info
-from applic import Applic
+from fixture.applic import Applic
 import pytest
 
 @pytest.fixture
