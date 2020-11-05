@@ -1,11 +1,11 @@
 from all_info import Info
-from fixture.applic import Applic
+from fixture.application import Application
 import pytest
 
 @pytest.fixture
 def app(request):
-    fixture = Applic()
-    request.addfinalizer(fixture.destr)
+    fixture = Application()
+    request.addfinalizer(fixture.destroy)
     return fixture
 
 def test_add_new_contact(app):
