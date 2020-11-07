@@ -1,4 +1,4 @@
-from all_info import Info
+from model.all_info import Info
 
 def test_edit_contact(app):
     contact = Info(
