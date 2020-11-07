@@ -2,8 +2,8 @@ from model.all_info import Info
 
 def test_edit_contact(app):
     contact = Info(
-        "USA",
-        "Colorado",
+        "Russia",
+        "Saint-Petersburg",
         "My notes about work",
         "My notes about work",
         "a@test.ru",
