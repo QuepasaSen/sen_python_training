@@ -13,6 +13,13 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("home page").click()
 
+    def create_contact(self, infoclass):
+        wd = self.app.wd
+        self.add_new()
+        self.all_fields(infoclass)
+        wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
+        self.back_to_home_page()
+
     def delete_contact(self):
         wd = self.app.wd
         wd.find_element_by_name("selected[]").click()
