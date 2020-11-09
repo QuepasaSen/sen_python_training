@@ -1,6 +1,6 @@
 class Info:
 
-    def __init__(self, dop_address, dop_phone, notes, email, email2, email3, domashniy, mobilniy, rabochiy, fax, title, company, address, firstname, middlename, lastname, nickname):
+    def __init__(self, dop_address=None, dop_phone=None, notes=None, email=None, email2=None, email3=None, domashniy=None, mobilniy=None, rabochiy=None, fax=None, title=None, company=None, address=None, firstname=None, middlename=None, lastname=None, nickname=None):
         self.dop_address = dop_address
         self.dop_phone = dop_phone
         self.notes = notes
