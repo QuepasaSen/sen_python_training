@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="367fceb5-cc5c-4100-8f8e-56b4ff9dd6c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,9 +148,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_delete_contact.py" />
         <item itemvalue="Python tests.pytest for test_delete_contact" />
-        <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_edit_group.py" />
       </list>
     </recent_temporary>
@@ -421,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604872484809</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="добавил в метод удаления контакта переход на главную страницу, чтобы тесты отрабатывали корректно при запуске всех одновременно">
+      <created>1604910195975</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1604910195975</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,7 +447,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="добавил параметры для функций и две функции которые до этого забыл логаут и возхврат на домашнюю страницу, тест отрабатывает корректно" />
     <MESSAGE value="изменил имя файла с вспомогательным классом, тест отрабатывает корректно" />
     <MESSAGE value="появилась ошибка при выполнении теста, не могу понять в чем именно ошибка" />
     <MESSAGE value="отладил, создал объект с типом созданного класса со всеми необходимыми параметрами" />
@@ -463,17 +471,18 @@
     <MESSAGE value="в тесте созданяи контакта добавил метод create который содержит в себе действия по заполнению данных контакта" />
     <MESSAGE value="добавил конструкцию if в тест для редактирования группы" />
     <MESSAGE value="добавили проверку валидности фикстуры" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавили проверку валидности фикстуры" />
+    <MESSAGE value="добавил в метод удаления контакта переход на главную страницу, чтобы тесты отрабатывали корректно при запуске всех одновременно" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил в метод удаления контакта переход на главную страницу, чтобы тесты отрабатывали корректно при запуске всех одновременно" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604526802397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604526802397" />
-    <state x="728" y="144" key="CommitChangelistDialog2" timestamp="1604872483930">
+    <state x="964" y="118" key="CommitChangelistDialog2" timestamp="1604910194999">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="728" y="144" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604872483930" />
+    <state x="964" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604910194999" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1604910070684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -506,10 +515,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604786930711" />
-    <state x="775" y="453" key="ReplaceDuplicatesPrompt" timestamp="1604781634863">
+    <state x="775" y="453" key="ReplaceDuplicatesPrompt" timestamp="1604922375263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="775" y="453" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1604781634863" />
+    <state x="775" y="453" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1604922375263" />
     <state x="733" y="222" key="RollbackChangesDialog" timestamp="1604649330134">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
