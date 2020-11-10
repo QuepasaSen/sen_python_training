@@ -23,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
       <recent name="C:\Users\User\PycharmProjects\sen_python_training\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test">
+  <component name="RunManager" selected="Python tests.pytest in test_edit_contact.py">
     <configuration name="pytest for test_edit_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="sen_python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,10 +146,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test" />
         <item itemvalue="Python tests.pytest for test_edit_contact" />
         <item itemvalue="Python tests.pytest in test_del_group.py" />
-        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test_delete_contact.py" />
       </list>
     </recent_temporary>
@@ -451,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604932899272</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="оптимизировал переходы между страницами">
+      <created>1604953233132</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1604953233132</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -468,7 +474,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="отладил, создал объект с типом созданного класса со всеми необходимыми параметрами" />
     <MESSAGE value="перевёл тесты добавления группы на pytest + фикстура согласно видеоуроку" />
     <MESSAGE value="перевёл тесты добавления контактов на pytest + фикстура согласно видеоуроку" />
     <MESSAGE value="созданы пакеты для разных зон ответственности" />
@@ -493,33 +498,34 @@
     <MESSAGE value="добавил в метод удаления контакта переход на главную страницу, чтобы тесты отрабатывали корректно при запуске всех одновременно" />
     <MESSAGE value="добавили проверку состояния сессии" />
     <MESSAGE value="Обеспечил выполнение предусловий в тестах для удаления и модификации для групп и контактов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обеспечил выполнение предусловий в тестах для удаления и модификации для групп и контактов" />
+    <MESSAGE value="оптимизировал переходы между страницами" />
+    <option name="LAST_COMMIT_MESSAGE" value="оптимизировал переходы между страницами" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604526802397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604526802397" />
-    <state x="584" y="118" key="CommitChangelistDialog2" timestamp="1604932898434">
+    <state x="584" y="118" key="CommitChangelistDialog2" timestamp="1604953232162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="584" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604932898434" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1604937155419">
+    <state x="584" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604953232162" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1604953438946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604937155419" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1604937155418">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604953438946" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1604953438946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604937155418" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1604937155418">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604953438946" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1604953438946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604937155418" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1604937155419">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604953438946" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1604953438946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604937155419" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604953438946" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1604786930711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -536,10 +542,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604786930711" />
-    <state x="775" y="453" key="ReplaceDuplicatesPrompt" timestamp="1604922375263">
+    <state x="775" y="453" key="ReplaceDuplicatesPrompt" timestamp="1605015770047">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="775" y="453" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1604922375263" />
+    <state x="775" y="453" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1605015770047" />
     <state x="733" y="222" key="RollbackChangesDialog" timestamp="1604649330134">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -548,10 +554,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603741495625" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604932917436">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604953239462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604932917436" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604953239462" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604649338750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

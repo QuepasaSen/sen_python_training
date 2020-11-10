@@ -23,11 +23,16 @@ class ContactHelper:
 
     def delete_contact(self):
         wd = self.app.wd
-        if not (wd.current_url.endswith("/addressbook/") and len(wd.find_elements_by_xpath("//input[@value='Send e-Mail']")) > 0):
-            wd.get("http://localhost/addressbook/")
+        self.current_url_check()
         wd.find_element_by_name("selected[]").click()
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to_alert().accept()
+
+    def current_url_check(self):
+        wd = self.app.wd
+        if not (wd.current_url.endswith("/addressbook/") and len(
+                wd.find_elements_by_xpath("//input[@value='Send e-Mail']")) > 0):
+            wd.get("http://localhost/addressbook/")
 
     def edit_contact(self, contact):
         wd = self.app.wd
@@ -38,8 +43,7 @@ class ContactHelper:
 
     def count_of_contact(self):
         wd = self.app.wd
-        if not (wd.current_url.endswith("/addressbook/") and len(wd.find_elements_by_xpath("//input[@value='Send e-Mail']")) > 0):
-            wd.get("http://localhost/addressbook/")
+        self.current_url_check()
         return len(wd.find_elements_by_name("selected[]"))
 
     def change_field_of_contact_value(self, field_name, text):
