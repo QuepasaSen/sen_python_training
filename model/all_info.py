@@ -1,6 +1,9 @@
+from sys import maxsize
+
 class Info:
 
-    def __init__(self, dop_address=None, dop_phone=None, notes=None, email=None, email2=None, email3=None, domashniy=None, mobilniy=None, rabochiy=None, fax=None, title=None, company=None, address=None, firstname=None, middlename=None, lastname=None, nickname=None):
+    def __init__(self, id=None, dop_address=None, dop_phone=None, notes=None, email=None, email2=None, email3=None, domashniy=None, mobilniy=None, rabochiy=None, fax=None, title=None, company=None, address=None, firstname=None, middlename=None, lastname=None, nickname=None):
+        self.id = id
         self.dop_address = dop_address
         self.dop_phone = dop_phone
         self.notes = notes
@@ -18,3 +21,12 @@ class Info:
         self.middlename = middlename
         self.lastname = lastname
         self.nickname = nickname
+
+    def __repr__(self):
+        return "%s,%s,%s" % (self.firstname, self.lastname, self.id)
+
+    def id_or_max(self):
+        if self.id:
+            return int(self.id)
+        else:
+            return maxsize

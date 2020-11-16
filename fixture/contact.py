@@ -1,4 +1,5 @@
 from selenium.webdriver.support.ui import Select
+from model.all_info import Info
 
 class ContactHelper:
 
@@ -8,6 +9,19 @@ class ContactHelper:
     def add_new(self):
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
+
+    def get_contact_list(self):
+        wd = self.app.wd
+        self.current_url_check()
+        contacts = []
+        for element in wd.find_elements_by_name("entry"):
+            lastname = element.find_element_by_xpath("//td[2]")
+            lastname_text = lastname.text
+            id = element.find_element_by_name("selected[]").get_attribute("value")
+            firstname = element.find_element_by_xpath("//td[3]")
+            firstname_text = firstname.text
+            contacts.append(Info(lastname=lastname_text, firstname=firstname_text, id=id))
+        return contacts
 
     def back_to_home_page(self):
         wd = self.app.wd
@@ -30,8 +44,7 @@ class ContactHelper:
 
     def current_url_check(self):
         wd = self.app.wd
-        if not (wd.current_url.endswith("/addressbook/") and len(
-                wd.find_elements_by_xpath("//input[@value='Send e-Mail']")) > 0):
+        if not (wd.current_url.endswith("/addressbook/") and len(wd.find_elements_by_xpath("//input[@value='Send e-Mail']")) > 0):
             wd.get("http://localhost/addressbook/")
 
     def edit_contact(self, contact):
