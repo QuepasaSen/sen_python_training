@@ -15,12 +15,10 @@ class ContactHelper:
         self.current_url_check()
         contacts = []
         for element in wd.find_elements_by_name("entry"):
-            lastname = element.find_element_by_xpath("//td[2]")
-            lastname_text = lastname.text
+            lastname = element.find_element_by_xpath(".//td[2]").text
             id = element.find_element_by_name("selected[]").get_attribute("value")
-            firstname = element.find_element_by_xpath("//td[3]")
-            firstname_text = firstname.text
-            contacts.append(Info(lastname=lastname_text, firstname=firstname_text, id=id))
+            firstname = element.find_element_by_xpath(".//td[3]").text
+            contacts.append(Info(lastname=lastname, firstname=firstname, id=id))
         return contacts
 
     def back_to_home_page(self):

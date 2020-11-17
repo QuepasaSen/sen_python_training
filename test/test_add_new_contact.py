@@ -7,6 +7,4 @@ def test_add_new_contact(app):
     new_contact_list = app.contact.get_contact_list()
     assert len(old_contact_list) + 1 == len(new_contact_list)
     old_contact_list.append(infoclass)
-    print(new_contact_list)
-    print(old_contact_list)
     assert sorted(old_contact_list, key=Info.id_or_max) == sorted(new_contact_list, key=Info.id_or_max)

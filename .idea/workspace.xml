@@ -23,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/all_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/all_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_new_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_new_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -479,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605389128658</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="------">
+      <created>1605566702700</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1605566702700</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +502,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="выделили вспомогательный класс для управления сессиями" />
     <MESSAGE value="выделили вспомогательный класс для работы с группами" />
     <MESSAGE value="выделили вспомогательный класс для создания нового контакта" />
     <MESSAGE value="выделили вспомогательный класс для заполнения полей нового контакта" />
@@ -521,33 +526,34 @@
     <MESSAGE value="добавил еще метод для проверки текущего адреса страницы" />
     <MESSAGE value="добавили проверки на соответствие старого и нового списка при добавлении редактировании и удалении групп" />
     <MESSAGE value="добавили проверки на соответствие содержимого старого и нового списка при добавлении редактировании и удалении групп" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавили проверки на соответствие содержимого старого и нового списка при добавлении редактировании и удалении групп" />
+    <MESSAGE value="------" />
+    <option name="LAST_COMMIT_MESSAGE" value="------" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604526802397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604526802397" />
-    <state x="499" y="120" key="CommitChangelistDialog2" timestamp="1605389127741">
+    <state x="499" y="120" key="CommitChangelistDialog2" timestamp="1605566701531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="499" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605389127741" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1605566522844">
+    <state x="499" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605566701531" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1605603808391">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605566522844" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1605566522844">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605603808391" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1605603808390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605566522844" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1605566522844">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605603808390" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1605603808390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605566522844" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1605566522844">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605603808390" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1605603808390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605566522844" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605603808390" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1604786930711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -576,10 +582,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603741495625" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605389140083">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605566705018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605389140083" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605566705018" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604649338750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
