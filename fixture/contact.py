@@ -10,16 +10,19 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
 
+    contact_cache = None
+
     def get_contact_list(self):
-        wd = self.app.wd
-        self.current_url_check()
-        contacts = []
-        for element in wd.find_elements_by_name("entry"):
-            lastname = element.find_element_by_xpath(".//td[2]").text
-            id = element.find_element_by_name("selected[]").get_attribute("value")
-            firstname = element.find_element_by_xpath(".//td[3]").text
-            contacts.append(Info(lastname=lastname, firstname=firstname, id=id))
-        return contacts
+        if self.contact_cache is None:
+            wd = self.app.wd
+            self.current_url_check()
+            self.contact_cache = []
+            for element in wd.find_elements_by_name("entry"):
+                lastname = element.find_element_by_xpath(".//td[2]").text
+                id = element.find_element_by_name("selected[]").get_attribute("value")
+                firstname = element.find_element_by_xpath(".//td[3]").text
+                self.contact_cache.append(Info(lastname=lastname, firstname=firstname, id=id))
+            return list(self.contact_cache)
 
     def back_to_home_page(self):
         wd = self.app.wd
@@ -32,6 +35,7 @@ class ContactHelper:
         self.all_fields(infoclass)
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
         self.back_to_home_page()
+        self.contact_cache = None
 
     def delete_contact(self):
         wd = self.app.wd
@@ -40,6 +44,7 @@ class ContactHelper:
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to_alert().accept()
         wd.find_element_by_css_selector("div.msgbox")
+        self.contact_cache = None
 
     def current_url_check(self):
         wd = self.app.wd
@@ -52,6 +57,7 @@ class ContactHelper:
         wd.find_element_by_xpath("//img[@title='Edit']").click()
         self.all_fields(contact)
         wd.find_element_by_name("update").click()
+        self.contact_cache = None
 
     def count_of_contact(self):
         wd = self.app.wd
