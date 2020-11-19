@@ -54,10 +54,13 @@ class ContactHelper:
         if not (wd.current_url.endswith("/addressbook/") and len(wd.find_elements_by_xpath("//input[@value='Send e-Mail']")) > 0):
             wd.get("http://localhost/addressbook/")
 
-    def edit_contact(self, contact):
+    def edit_contact(self):
+        self.edit_contact_by_index(0)
+
+    def edit_contact_by_index(self, index, contact):
         wd = self.app.wd
-        wd.find_element_by_name("selected[]").click()
-        wd.find_element_by_xpath("//img[@title='Edit']").click()
+        wd.find_elements_by_name("selected[]")[index].click()
+        wd.find_elements_by_xpath("//img[@title='Edit']")[index].click()
         self.all_fields(contact)
         wd.find_element_by_name("update").click()
         self.contact_cache = None
