@@ -23,10 +23,8 @@ class ContactHelper:
                 lastname = element.find_element_by_xpath(".//td[2]").text
                 id = element.find_element_by_name("selected[]").get_attribute("value")
                 firstname = element.find_element_by_xpath(".//td[3]").text
-                all_phones = cells[5].text.splitlines()
-                self.contact_cache.append(Info(lastname=lastname, firstname=firstname, id=id,
-                                               domashniy=all_phones[0], mobilniy=all_phones[1],
-                                               rabochiy=all_phones[2],dop_phone=all_phones[3]))
+                all_phones = cells[5].text
+                self.contact_cache.append(Info(lastname=lastname, firstname=firstname, id=id, all_phones_from_homepage = all_phones))
             return list(self.contact_cache)
 
     def back_to_home_page(self):
