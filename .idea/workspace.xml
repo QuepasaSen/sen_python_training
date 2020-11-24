@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367fceb5-cc5c-4100-8f8e-56b4ff9dd6c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_new_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_new_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_phones.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,13 +160,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603706195389</updated>
-    </task>
-    <task id="LOCAL-00006" summary="успешно пройденный тест через pytest">
-      <created>1603741623427</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1603741623427</updated>
     </task>
     <task id="LOCAL-00007" summary="после создания методов">
       <created>1603745002804</created>
@@ -507,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606252471527</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="появилась ошибка в тесте на странице просмотра контакта">
+      <created>1606256117146</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1606256117146</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -524,7 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="исправил ошибки по комментарию преподавателя" />
     <MESSAGE value="до объединения двух фикстур + добавил изменение хэдер футера для теста групп" />
     <MESSAGE value="объединил фикстуру заполнения полей с фикстурой где остальные функции по работе с контактами, лишний файл удалил" />
     <MESSAGE value="wd.find_element_by_name(&quot;user&quot;) для логаута" />
@@ -549,7 +545,8 @@
     <MESSAGE value="тест удаления контакта удаляет случайно выбранный контакт" />
     <MESSAGE value="тест редактирования контакта редактирует случайно выбранный контакт" />
     <MESSAGE value="тест сравнения номеров телефона на главной и внутри контакта" />
-    <option name="LAST_COMMIT_MESSAGE" value="тест сравнения номеров телефона на главной и внутри контакта" />
+    <MESSAGE value="появилась ошибка в тесте на странице просмотра контакта" />
+    <option name="LAST_COMMIT_MESSAGE" value="появилась ошибка в тесте на странице просмотра контакта" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604526802397">
@@ -560,26 +557,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605620106631" />
-    <state x="499" y="120" key="CommitChangelistDialog2" timestamp="1606252470381">
+    <state x="499" y="120" key="CommitChangelistDialog2" timestamp="1606256116398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="499" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606252470381" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1606255740320">
+    <state x="499" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606256116398" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1606256554491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606255740320" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1606255740319">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606256554491" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1606256554491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606255740319" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1606255740319">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606256554491" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1606256554491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606255740319" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1606255740320">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606256554491" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1606256554491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606255740320" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606256554491" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1605626826226">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -608,10 +605,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603741495625" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605795734321">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606256129274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605795734321" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606256129274" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604649338750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
