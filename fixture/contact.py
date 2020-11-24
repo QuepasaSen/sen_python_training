@@ -18,10 +18,14 @@ class ContactHelper:
             self.current_url_check()
             self.contact_cache = []
             for element in wd.find_elements_by_name("entry"):
+                cells = element.find_elements_by_tag_name("td")
                 lastname = element.find_element_by_xpath(".//td[2]").text
                 id = element.find_element_by_name("selected[]").get_attribute("value")
                 firstname = element.find_element_by_xpath(".//td[3]").text
-                self.contact_cache.append(Info(lastname=lastname, firstname=firstname, id=id))
+                all_phones = cells[5].text.splitlines()
+                self.contact_cache.append(Info(lastname=lastname, firstname=firstname, id=id,
+                                               domashniy=all_phones[0], mobilniy=all_phones[1],
+                                               rabochiy=all_phones[2],dop_phone=all_phones[3]))
             return list(self.contact_cache)
 
     def back_to_home_page(self):
@@ -54,8 +58,22 @@ class ContactHelper:
         if not (wd.current_url.endswith("/addressbook/") and len(wd.find_elements_by_xpath("//input[@value='Send e-Mail']")) > 0):
             wd.get("http://localhost/addressbook/")
 
+    def open_contact_to_edit_by_index(self, index):
+        wd = self.app.wd
+        self.back_to_home_page()
+        row = wd.find_elements_by_name("entry")[index]
+        cell = row.find_elements_by_tag_name("td")[7]
+        cell.find_element_by_tag_name("a").click()
+
     def edit_contact(self):
         self.edit_contact_by_index(0)
+
+    def open_contact_view_by_index(self, index):
+        wd = self.app.wd
+        self.back_to_home_page()
+        row = wd.find_elements_by_name("entry")[index]
+        cell = row.find_elements_by_tag_name("td")[6]
+        cell.find_element_by_tag_name("a").click()
 
     def edit_contact_by_index(self, index, contact):
         wd = self.app.wd
@@ -76,6 +94,19 @@ class ContactHelper:
             wd.find_element_by_name(field_name).click()
             wd.find_element_by_name(field_name).clear()
             wd.find_element_by_name(field_name).send_keys(text)
+
+    def get_contact_info_from_edit_page(self, index):
+        wd = self.app.wd
+        self.open_contact_to_edit_by_index(index)
+        firstname = wd.find_element_by_name("firstname").get_attribute("value")
+        lastname = wd.find_element_by_name("lastname").get_attribute("value")
+        id = wd.find_element_by_name("id").get_attribute("value")
+        domashniy = wd.find_element_by_name("home").get_attribute("value")
+        rabochiy = wd.find_element_by_name("work").get_attribute("value")
+        mobilniy = wd.find_element_by_name("mobile").get_attribute("value")
+        dop_phone = wd.find_element_by_name("phone2").get_attribute("value")
+        return Info(firstname=firstname, lastname=lastname, id=id, domashniy=domashniy, rabochiy=rabochiy, mobilniy=mobilniy, dop_phone=dop_phone)
+
 
     def all_fields(self, all_info):
         wd = self.app.wd
