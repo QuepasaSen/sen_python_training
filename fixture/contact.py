@@ -23,8 +23,10 @@ class ContactHelper:
                 lastname = element.find_element_by_xpath(".//td[2]").text
                 id = element.find_element_by_name("selected[]").get_attribute("value")
                 firstname = element.find_element_by_xpath(".//td[3]").text
+                address = cells[3].text
                 all_phones = cells[5].text
-                self.contact_cache.append(Info(lastname=lastname, firstname=firstname, id=id, all_phones_from_homepage = all_phones))
+                all_emails = cells[4].text
+                self.contact_cache.append(Info(lastname=lastname, firstname=firstname, id=id, all_phones_from_homepage=all_phones, all_emails_from_homepage=all_emails, address=address))
             return list(self.contact_cache)
 
     def back_to_home_page(self):
@@ -102,7 +104,10 @@ class ContactHelper:
         rabochiy = re.search("W: (.*)", text).group(1)
         mobilniy = re.search("M: (.*)", text).group(1)
         dop_phone = re.search("P: (.*)", text).group(1)
-        return Info(domashniy=domashniy, rabochiy=rabochiy, mobilniy=mobilniy, dop_phone=dop_phone)
+        email = re.search("@ (.*)", text).group(1)
+        email2 = re.search("@ (.*)", text).group(1)
+        email3 = re.search("@ (.*)", text).group(1)
+        return Info(domashniy=domashniy, rabochiy=rabochiy, mobilniy=mobilniy, dop_phone=dop_phone, email=email, email2=email2, email3=email3)
 
 
 
@@ -116,7 +121,11 @@ class ContactHelper:
         rabochiy = wd.find_element_by_name("work").get_attribute("value")
         mobilniy = wd.find_element_by_name("mobile").get_attribute("value")
         dop_phone = wd.find_element_by_name("phone2").get_attribute("value")
-        return Info(firstname=firstname, lastname=lastname, id=id, domashniy=domashniy, rabochiy=rabochiy, mobilniy=mobilniy, dop_phone=dop_phone)
+        email = wd.find_element_by_name("email").get_attribute("value")
+        email2 = wd.find_element_by_name("email2").get_attribute("value")
+        email3 = wd.find_element_by_name("email3").get_attribute("value")
+        address = wd.find_element_by_name("address").get_attribute("value")
+        return Info(firstname=firstname, lastname=lastname, id=id, domashniy=domashniy, rabochiy=rabochiy, mobilniy=mobilniy, dop_phone=dop_phone, email=email, email2=email2, email3=email3, address=address)
 
 
     def all_fields(self, all_info):
