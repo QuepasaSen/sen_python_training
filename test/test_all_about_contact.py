@@ -1,6 +1,10 @@
 import re
+from random import randrange
 
 def test_contacts_on_homepage(app):
+    # contact_list = app.contact.get_contact_list()
+    # nomer = randrange(len(contact_list))
+    # print(nomer)
     contact_from_homepage = app.contact.get_contact_list()[0]
     contact_from_edit_page = app.contact.get_contact_info_from_edit_page(0)
     assert contact_from_homepage.all_phones_from_homepage == merge_phones_like_on_homepage(contact_from_edit_page)

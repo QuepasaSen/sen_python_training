@@ -104,10 +104,11 @@ class ContactHelper:
         rabochiy = re.search("W: (.*)", text).group(1)
         mobilniy = re.search("M: (.*)", text).group(1)
         dop_phone = re.search("P: (.*)", text).group(1)
-        email = re.search("@ (.*)", text).group(1)
-        email2 = re.search("@ (.*)", text).group(1)
-        email3 = re.search("@ (.*)", text).group(1)
-        return Info(domashniy=domashniy, rabochiy=rabochiy, mobilniy=mobilniy, dop_phone=dop_phone, email=email, email2=email2, email3=email3)
+        emails = re.findall("\S+@\S+", text)
+        # print(text)
+        # email2 = re.search("(\S+@\S+)", text).group(3)
+        # email3 = re.search("(\S+@\S+)", text).group(4)
+        return Info(domashniy=domashniy, rabochiy=rabochiy, mobilniy=mobilniy, dop_phone=dop_phone, email=emails[0], email2=emails[1], email3=emails[2])
 
 
 
