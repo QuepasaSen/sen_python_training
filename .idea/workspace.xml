@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367fceb5-cc5c-4100-8f8e-56b4ff9dd6c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/target.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
       <recent name="C:\Users\User\PycharmProjects\sen_python_training\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_del_group.py">
     <configuration name="pytest for test_all_about_contact.test_contacts_on_contact_view_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="sen_python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,15 +144,33 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_del_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="sen_python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python tests.pytest in test_add_new_contact.py" />
-      <item itemvalue="Python tests.pytest for test.test_all_about_contact.test_contacts_on_homepage" />
       <item itemvalue="Python tests.pytest for test_all_about_contact.test_contacts_on_contact_view_page" />
       <item itemvalue="Python tests.pytest for test_all_about_contact.test_contacts_on_homepage" />
+      <item itemvalue="Python tests.pytest for test.test_all_about_contact.test_contacts_on_homepage" />
       <item itemvalue="Python tests.pytest in test_add_group.py" />
+      <item itemvalue="Python tests.pytest in test_del_group.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_del_group.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest for test_all_about_contact.test_contacts_on_homepage" />
         <item itemvalue="Python tests.pytest for test_all_about_contact.test_contacts_on_contact_view_page" />
@@ -168,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603706195389</updated>
-    </task>
-    <task id="LOCAL-00011" summary="добавил комментарии и разбил на группы по действиям">
-      <created>1603803321141</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1603803321141</updated>
     </task>
     <task id="LOCAL-00012" summary="вынес отдельные блоки в свои функции">
       <created>1603805588013</created>
@@ -512,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606512464145</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Реализовал опции командной строки, позволяющие указывать тип браузера и адрес тестируемого приложения">
+      <created>1606600771981</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1606600771982</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -529,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="добавил метод для выделения первой группы в списке" />
     <MESSAGE value="в тесте созданяи контакта добавил метод create который содержит в себе действия по заполнению данных контакта" />
     <MESSAGE value="добавил конструкцию if в тест для редактирования группы" />
     <MESSAGE value="добавили проверку валидности фикстуры" />
@@ -554,37 +571,38 @@
     <MESSAGE value="обратные проверки по уроку" />
     <MESSAGE value="тест сравнения всех данных с домашней страницы со страницей редактирования" />
     <MESSAGE value="ошибка запуска из консоли" />
-    <option name="LAST_COMMIT_MESSAGE" value="ошибка запуска из консоли" />
+    <MESSAGE value="Реализовал опции командной строки, позволяющие указывать тип браузера и адрес тестируемого приложения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализовал опции командной строки, позволяющие указывать тип браузера и адрес тестируемого приложения" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="529" y="153" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606600647903">
+    <state x="529" y="153" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606999336327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="529" y="153" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606600647903" />
+    <state x="529" y="153" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606999336327" />
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1605620106631">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605620106631" />
-    <state x="499" y="120" key="CommitChangelistDialog2" timestamp="1606512462356">
+    <state x="499" y="120" key="CommitChangelistDialog2" timestamp="1606600770490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="499" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606512462356" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1606600509606">
+    <state x="499" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606600770490" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1606999341296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606600509606" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1606600509606">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606999341296" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1606999341296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606600509606" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1606600509605">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606999341296" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1606999341296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606600509605" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1606600509606">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606999341296" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1606999341296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606600509606" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606999341296" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1606258826156">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -613,10 +631,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603741495625" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606512465798">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606600775665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606512465798" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606600775665" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604649338750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
